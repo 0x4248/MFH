@@ -1,4 +1,4 @@
-# MFH
+# Multi File hash
 
 Multi File Hash creates several hashes of the head and tail of a file.
 
