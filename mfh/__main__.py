@@ -11,6 +11,12 @@ import os
 import argparse
 import colorama
 
+def print_error(error):
+    print(f"[ {colorama.Fore.RED}X{colorama.Style.RESET_ALL} ] {error}")
+
+def print_success(success):
+    print(f"[ {colorama.Fore.GREEN}✓{colorama.Style.RESET_ALL} ] {success}")
+
 def generate_hash_file(file_path, head_lines, tail_lines, output, return_output=False):
     file_name = os.path.basename(file_path)
     file_size = os.path.getsize(file_path)
@@ -40,12 +46,6 @@ def generate_hash_file(file_path, head_lines, tail_lines, output, return_output=
                 output_file.write(hash_file)
         else:
             print(hash_file)
-
-def print_error(error):
-    print(f"[ {colorama.Fore.RED}X{colorama.Style.RESET_ALL} ] {error}")
-
-def print_success(success):
-    print(f"[ {colorama.Fore.GREEN}✓{colorama.Style.RESET_ALL} ] {success}")
 
 def compare(hash_a, hash_b):
     hash_a_fn = ""
