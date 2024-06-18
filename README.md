@@ -2,6 +2,9 @@
 
 Multi File Hash creates several hashes of the head and tail of a file.
 
+> [!note]
+> This project is has be deprecated in favour of [FingerPrinter](https://github.com/0x4248/FingerPrinter)
+
 ## Usage
 
 ```bash
